@@ -39,7 +39,7 @@ class ActionsServer(BaseHTTPRequestHandler):
                     _logging(error, _xid)
             else:
                 code = 400
-                message = "Неверное число параметров."
+                message = "Wrong number of parameters"
 
         elif not config._health_check_url.findall(self.path):
             code = 404
